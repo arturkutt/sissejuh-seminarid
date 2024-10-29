@@ -30,3 +30,26 @@ img {
     width: 300px;
     height: 340px;
 }
+
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    
+    border: 2px solid #18181b; /* Tabeli rakkude piirjooned */
+}
+
+th {
+    background-color: #0369a1;
+    border: 1px solid black;
+    color: #f4f4f5;
+    font-weight: bold; /* Teksti paksus */
+    padding: 10px;
+    text-align: left; /* Joondus vasakule */
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #27272a; /* Tabeli rakkude piirjooned */
+}
