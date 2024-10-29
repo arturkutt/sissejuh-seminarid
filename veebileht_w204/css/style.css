@@ -13,7 +13,7 @@
 .car-image {
     width: 300px; /* Pildi laius */
     height: auto; /* Hoia pildi suhe */
-    box-shadow: 5px 5px 5px #27272a; /* Pildi varjuefekt */
+    box-shadow: 5px 5px 5px rgb(72, 72, 72); /* Muuda varju värv punaseks */
 }
 
 .table-container {
@@ -28,7 +28,6 @@ table {
     border: 2px solid #18181b; /* Tabeli välimine piir */
 }
 
-/* Ülejäänud CSS jääb samaks */
 body {
     margin: 20px;
     font-family: Arial, sans-serif;
