@@ -1,14 +1,15 @@
 body {
     margin: 20px;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #f4f4f5; /* Tekstivärv heledamaks */
     line-height: 1.6;
+    background-color: #262626; /* Lehe taustavärv */
 }
 
 h1 {
     font-family: "Lucida Console", "Courier New";
     font-size: 30px;
-    color: #262626;
+    color: #ffffff; /* Pealkirja tekstivärv valgeks */
     text-align: center;
 }
 
@@ -16,10 +17,12 @@ p {
     font-size: 18px;
     text-align: justify;
     margin-bottom: 15px;
+    color: #e0e0e0; /* Paragrahvi tekstivärv heledamaks */
 }
 
 ul, ol {
     margin-left: 20px;
+    color: #e0e0e0; /* Loetelu tekstivärv heledamaks */
 }
 
 img {
@@ -31,25 +34,29 @@ img {
     height: 340px;
 }
 
-
 table {
     width: 50%;
     border-collapse: collapse;
     margin: 20px auto;
-    
-    border: 2px solid #18181b; /* Tabeli rakkude piirjooned */
+    border: 2px solid #18181b; /* Tabeli välimine piir */
 }
 
 th {
-    background-color: #0369a1;
-    border: 1px solid black;
-    color: #f4f4f5;
+    background-color: #0369a1; /* Päise taustavärv */
+    color: #f4f4f5; /* Päise tekstivärv */
     font-weight: bold; /* Teksti paksus */
-    padding: 10px;
+    padding: 10px; /* Rakkude sisemine vahe */
     text-align: left; /* Joondus vasakule */
+    border: 1px solid #18181b; /* Ühtne piirjoon päises */
 }
 
 td {
-    padding: 10px;
-    border: 1px solid #27272a; /* Tabeli rakkude piirjooned */
+    padding: 10px; /* Rakkude sisemine vahe */
+    border: 1px solid #27272a; /* Rakkude piirjoon */
+    color: #f4f4f5; /* Tabeli tekstivärv heledamaks */
+}
+
+/* Alternatiivsete ridade värvimine (valikuline) */
+tr:nth-child(even) {
+    background-color: #404040; /* Heledam taust igal teisel real */
 }
