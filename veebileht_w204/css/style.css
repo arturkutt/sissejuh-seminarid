@@ -1,15 +1,46 @@
+.container {
+    display: flex; /* Paigutab elemendid kõrvuti */
+    align-items: flex-start; /* Joondab elemendid ülemise serva järgi */
+    justify-content: space-between; /* Jagab ruumi võrdselt */
+    margin: 20px 0; /* Ülemine ja alumine marginaal */
+}
+
+.info {
+    flex: 1; /* Võtab võrdselt ruumi */
+    margin-right: 20px; /* Lisab ruumi pildi ja teksti vahele */
+}
+
+.car-image {
+    width: 300px; /* Pildi laius */
+    height: auto; /* Hoia pildi suhe */
+    box-shadow: 5px 5px 5px #27272a; /* Pildi varjuefekt */
+}
+
+.table-container {
+    flex: 1; /* Võtab võrdselt ruumi */
+    margin-left: 20px; /* Lisab ruumi pildi ja tabeli vahele */
+}
+
+table {
+    width: 100%; /* Tabeli laius 100% */
+    border-collapse: collapse;
+    margin: 20px 0; /* Tabeli ülemine ja alumine marginaal */
+    border: 2px solid #18181b; /* Tabeli välimine piir */
+}
+
+/* Ülejäänud CSS jääb samaks */
 body {
     margin: 20px;
     font-family: Arial, sans-serif;
-    color: #f4f4f5; /* Tekstivärv heledamaks */
+    color: #f4f4f5;
     line-height: 1.6;
-    background-color: #262626; /* Lehe taustavärv */
+    background-color: #262626;
 }
 
 h1 {
     font-family: "Lucida Console", "Courier New";
     font-size: 30px;
-    color: #ffffff; /* Pealkirja tekstivärv valgeks */
+    color: #ffffff;
     text-align: center;
 }
 
@@ -17,28 +48,12 @@ p {
     font-size: 18px;
     text-align: justify;
     margin-bottom: 15px;
-    color: #e0e0e0; /* Paragrahvi tekstivärv heledamaks */
+    color: #e0e0e0;
 }
 
 ul, ol {
     margin-left: 20px;
-    color: #e0e0e0; /* Loetelu tekstivärv heledamaks */
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px 5px #27272a;
-    width: 300px;
-    height: 340px;
-}
-
-table {
-    width: 50%;
-    border-collapse: collapse;
-    margin: 20px auto;
-    border: 2px solid #18181b; /* Tabeli välimine piir */
+    color: #e0e0e0;
 }
 
 th {
@@ -56,7 +71,6 @@ td {
     color: #f4f4f5; /* Tabeli tekstivärv heledamaks */
 }
 
-/* Alternatiivsete ridade värvimine (valikuline) */
 tr:nth-child(even) {
     background-color: #404040; /* Heledam taust igal teisel real */
 }
